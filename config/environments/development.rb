@@ -22,10 +22,10 @@ Expertiza::Application.configure do
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
       address:              'smtp.gmail.com',
-      port:                 25,
+      port:                 587,
       domain:               'gmail.com',
-      user_name:            'expertiza.development@gmail.com',
-      password:             'Expertiza@123',
+      user_name:            'ExperticaTest@gmail.com',
+      password:             'Password98@123',
       authentication:       'plain',
       enable_starttls_auto: true  }
 

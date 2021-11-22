@@ -15,10 +15,13 @@ describe ReputationWebServiceController do
       @reviewee_with_assignment = create(:assignment_team, assignment: @assignment)
 
       @response_map = create(:review_response_map, reviewer: @reviewer)
-      @submission_records = create(:submission_records, assignment_id: @assignment.id, team_id: @reviewee.id, operation: 'Submit Hyperlink' content: 'weblink')
+      @submission_records = create(:submission_records, assignment_id: @assignment.id, team_id: @reviewee.id, operation: 'Submit Hyperlink', content: 'weblink')
 
     end
 
-    it '' do
+    it 'at first no review grade generated' do
       create()
     end
+
+  end
+end
